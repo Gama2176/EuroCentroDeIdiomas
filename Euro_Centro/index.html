@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<!-- Idioma de la página -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Nombre de la página -->
+    <title>EuroCentro</title>
+
+    <!-- Conexion a estilos de la página -->
+    <link rel="stylesheet" href="View/Css/index.css">
+    <link rel="stylesheet" href="View/Css/intlTelInput.css">
+
+    <!-- Icono de la página -->
+     <link rel="icon" href="View/Images/icon-index.png" type="png">
+
+     <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+     <!-- Librerias de Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16601032472"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16601032472');
+    </script>
+
+</head>
+<body>
+
+    <!-- Inicio del cuerpo de la página-->
+    <div class="general">
+        <header>
+            <nav class="navbar banner fixed-top">
+              <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#inicio">EuroCentro de Idiomas <img class="star-icon" src="View/Images/star.png" width="20" height="20" alt="navbar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EuroCentro de Idiomas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active nav-link-close text-white" aria-current="page" href="#inicio">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-link-close text-white" aria-current="page" href="#nuestros-c">Nuestros Cursos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-link-close text-white" aria-current="page" href="#testimonios">Testimonios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active nav-link-close text-white" aria-current="page" href="#contacto">¡Contáctanos!</a>
+                      </li>
+                    </ul>
+                    <img class="img-sidebar" src="View/Images/Euro-centro-lg.png" height="90" width="140" alt="lg-euro">
+                  </div>
+                </div>
+              </div>
+            </nav>
+        </header>
+        
+        <!-- Inicio -->
+        <section class="body" id="inicio">
+            <div class="bg-img">
+                <div class="container-fluid">
+                    <div class="container text-center">
+                        <div class="row justify-content-start">
+                            <!-- Formulario Principal -->
+                            <div class="col-md-6 form-container" style="margin-top: 15px">
+                                <form class="needs-validation" id="phone-form" novalidate>
+                                    <div class="form-titles">
+                                        <h5 class="form-title">¡Aplica para nuestras BECAS!</h5>
+                                        <p class="form-p">Llena este breve formulario para obtener nuestra promoción vigente.</p>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="validationCustom01" class="form-label">Nombre(s) y Apellidos</label>
+                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                      </div>
+                                    <div class="mb-3">
+                                        <label for="validationCustom05" class="form-label tel-input">Ingresa un Número de Teléfono</label>
+                                        <input id="phone" name="phone" type="tel" class="form-control" required />
+                                        <input id="lada" name="lada" type="hidden" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="validationCustomUsername" class="form-label">Correo Electrónico</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="ejemplo@gmail.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="validationCustom04" class="form-label">¿Qué idioma deseas Aprender?</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Seleccione...</option>
+                                            <option>Inglés</option>
+                                            <option>Francés</option>
+                                            <option>Italiano</option>
+                                            <option>Alemán</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="validationCustom04" class="form-label">¿Tienes conocimientos previos?</label>
+                                        <select class="form-select" id="validationCustom04" required>
+                                            <option selected disabled value="">Seleccione...</option>
+                                            <option>Si, tengo conocimientos previos</option>
+                                            <option>No, tengo conocimientos previos</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="validationCustom03" class="form-label">¿Dónde vives?</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="text" class="form-control" id="validationCustom03" placeholder="Ciudad" required>
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" id="validationCustom03" placeholder="Estado" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <button class="btn btn-primary" type="submit">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Metodología -->
+        <section class="contenido">
+            <div class="container-fluid text-center">
+                <h4 class="center text-center">La mejor manera de aprender un idioma presencial o en línea</h4>
+                <div class="list-curs">
+                    <li class="wow fadeInLeft" data-wow-delay="0.1s" id="profesoresinter">
+                        <div class="main_wr2">
+                            <h5>Profesores internacionales</h5>
+                            <p>Estudiarás con profesores certificados en la enseñanza del idioma de cualquier parte del mundo, para que aprendas distintas pronunciaciones y seas un experto.</p>
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.3s" id="plataformas">
+                        <div class="main_wr2">
+                            <h5>Plataformas innovadoras</h5>
+                            <p>Complemento para tu aprendizaje, acceso a prácticas extras y oportunidades de educación personalizada a través de nuestra plataforma.</p>
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-delay="0.2s" id="clasesenvivo">
+                        <div class="main_wr2">
+                            <h5>Clases en vivo</h5>
+                            <p>Tú eliges la forma de aprender un idioma: <br> a) Presencial en nuestras instalaciones <br> b) A distancia en cualquier parte del mundo a través de nuestra plataforma</p>
+                        </div>
+                    </li>
+                    <li class="wow fadeInRight" data-wow-delay="0.4s" id="salas">
+                        <div class="main_wr2">
+                            <h5>Salas de conversación</h5>
+                            <p>Sesiones grupales en vivo con personas de todo el mundo.</p>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Sección de imagen central -->
+        <section class="img-cent">
+            <div class="cent-img text-center p-2">
+                <div class="txt-c1">
+                    <h1 class="display-4 display-md-1">Tu conocimiento</h1>
+                    <h2 class="display-5 display-md-2">es el camino al éxito</h2>
+                </div>
+            </div> 
+        </section>
+          
+        <!-- Sección de apartado de cursos-->
+        <section class="cursos">
+            <div class="container-fluid text-center">
+                <div class="title"  id="nuestros-c">
+                    <h1> Nuestros Cursos </h1>
+                </div>
+              </div>
+        </section>
+
+        <!-- Sección de apartado de cursos - imágenes -->
+        <section class="cursos-txt">
+            <div class="container-fluid text-center">
+                <div class="cursos-img">
+                    <div class="container text-center">
+                        <div class="row d-flex align-items-start">
+                            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center align-items-md-start img-text-container">
+                                <div class="img-container">
+                                    <img src="View/Images/ingles.webp" class="img-us mb-3 mb-md-0" alt="...">
+                                    <img src="View/Images/ingles_m.webp" class="img-mini" alt="...">
+                                </div>
+                                <div class="img-text-content ms-md-5 text-md-start">
+                                    <a href="#"><h2>Inglés</h2></a>
+                                    <p>Saber este idioma te coloca entre los profesionistas más demandados por las empresas que compiten en el mercado internacional. Con nosotros desarrollarás las cuatro habilidades lingüísticas: Leer, escribir, hablar y escuchar.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-md-4">
+                                <!-- Columna vacía X -->
+                            </div>
+
+                            <!-- Cambio de idioma -->
+
+                            <div class="col-12 col-md-4">
+                                <!-- Columna vacía X -->
+                            </div>
+
+                            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center align-items-md-start img-text-container">
+                                <div class="img-container">
+                                    <img src="View/Images/frances.webp" class="img-us mb-3 mb-md-0" alt="...">
+                                    <img src="View/Images/frances_m.webp" class="img-mini" alt="...">
+                                </div>
+                                <div class="img-text-content ms-md-5 text-md-start">
+                                    <a href="#"><h2>Francés</h2></a>
+                                    <p>El dominio de este idioma facilita las posibilidades de obtener becas para estudiar en las mejores universidades francoparlantes.</p>
+                                </div>
+                            </div>
+
+                            <!-- Cambio de idioma -->
+
+                            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center align-items-md-start img-text-container">
+                                <div class="img-container">
+                                    <img src="View/Images/aleman.webp" class="img-us mb-3 mb-md-0" alt="...">
+                                    <img src="View/Images/aleman_m.webp" class="img-mini" alt="...">
+                                </div>
+                                <div class="img-text-content ms-md-5 text-md-start">
+                                    <a href="#"><h2>Alemán</h2></a>
+                                    <p>Al hablar este idioma las posibilidades se amplian para laborar en empresas de Alemania, Suiza, Austria o cualquier otra que tenga lazos comerciales con algún país germanohablante.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <!-- Columna vacía x -->
+                            </div>
+
+                            <!-- Cambio de idioma -->
+
+                            <div class="col-12 col-md-4">
+                                <!-- Columna vacía x -->
+                            </div>
+
+                            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center align-items-md-start img-text-container">
+                                <div class="img-container">
+                                    <img src="View/Images/italiano.webp" class="img-us mb-3 mb-md-0" alt="...">
+                                    <img src="View/Images/italiano_m.webp" class="img-mini" alt="...">
+                                </div>
+                                <div class="img-text-content ms-md-5 text-md-start">
+                                    <a href="#"><h2>Italiano</h2></a>
+                                    <p>Si eres amante de la cocina, la moda o el diseño, este idioma es ideal para ti, además es un idioma fácil de aprender, ya que, su raíz es latina al igual que la lengua española.</p>
+                                </div>
+                            </div>
+
+                            <!-- Cambio de idioma -->
+
+                            <div class="col-12 col-md-8 d-flex flex-column flex-md-row align-items-center align-items-md-start img-text-container">
+                                <div class="img-container">
+                                    <img src="View/Images/español.webp" class="img-us mb-3 mb-md-0" alt="...">
+                                    <img src="View/Images/español_m.webp" class="img-mini" alt="...">
+                                </div>
+                                <div class="img-text-content ms-md-5 text-md-start">
+                                    <a href="#"><h2>Español lengua extranjera</h2></a>
+                                    <p>En la actualidad esta lengua es una de las más importantes, ya que tiene presencia en casi toda América Latina. Los países hispanohablantes ofrecen una cantidad enorme de productos, servicios y cultura, lo que representa una oportunidad de crecimiento para negocios e instituciones.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <!-- Columna vacía x -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagen central abajo -->
+        <section class="img-end">
+            <div class="end-img text-center p-2">
+                <div class="txt-c2">
+                    <h2 class="display-5 display-md-4">Nosotros te ayudamos a</h2>
+                    <h1 class="display-4 display-md-3">hablar otro idioma</h1>
+                    <p class="lead lead-md">Conoce nuestro método de enseñanza. <br> Agenda una clase muestra GRATIS</p>
+                </div>
+            </div> 
+        </section>
+        
+        <!-- Apartado de testimonios -->
+        <section class="testimonios">
+            <div class="container-fluid text-center">
+                <div class="text-test">
+                    <h1>Testimonios</h1>
+                </div>   
+                <div class="test" id="testimonios">
+                    <div class="container text-center">
+                        <div class="row align-items-stretch">
+                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                <div class="card1 d-flex flex-column">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="View/Images/t1.webp" class="img-fluid rounded-circle" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Mónica Macías</h5>
+                                                <p class="card-text text-center"><small class="text-body-secondary">13 años</small></p>
+                                                <p class="card-text">Me gusta Euro Centro por su horarios, por su forma de enseñar y sus maestros. Los contenidos que enseñan son buenos. Empecé a estudiar aquí para tener mejores oportunidades en el futuro.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                <div class="card2 d-flex flex-column">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="View/Images/t2.webp" class="img-fluid rounded-circle" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Vanessa Martínez</h5>
+                                                <p class="card-text text-center"><small class="text-body-secondary">24 años</small></p>
+                                                <p class="card-text">Entré a Euro Centro para tener mejores oportunidades laborales y tener la posibilidad de viajar y conocer nuevos lugares.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                <div class="card3 d-flex flex-column">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="View/Images/t3.webp" class="img-fluid rounded-circle" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Karen Hernández</h5>
+                                                <p class="card-text text-center"><small class="text-body-secondary">24 años</small></p>
+                                                <p class="card-text">Me inscribí a Euro Centro porque me dieron la posibilidad de obtener buenos conocimientos y resultados sobre mi aprendizaje en Inglés. He aprendido mucho durante estos 3 meses.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!-- Apartado final -->
+        <section class="sec-btn">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <h1 class="txt-come"> ¡COMENCEMOS! </h1>
+                            <a href="#inicio" class="btn-conv"> Iniciar Conversación </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+              
+        <!-- Footer -->
+        <section class="footer" id="contacto">
+                <div class="container text-center">
+                    <div class="container text-center">
+                        <div class="row">
+                          <div class="col">
+                            <img class="img-euro" src="View/Images/Euro-centro-lg.png" height="120" width="200">
+                          </div>
+                          <div class="col">
+                            <h4> Ubícanos en</h4>
+                            <p>Av. 2a Sur Poniente #1417 Col. La Lomita 29060 (Frente al Parque Bicentenario), Tuxtla Gutiérrez, Chiapas 29060</p>
+                          </div>
+                          <div class="col">
+
+                            <h5 class="txt-red"> ¡Nuestras redes sociales! </h5>
+                            
+                            <ul class="example-2">
+                                <li class="icon-content">
+                                    <a href="https://www.facebook.com/eurocentromx" aria-label="Facebook" data-social="facebook">
+                                      <div class="filled"></div>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" xml:space="preserve">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.87 2.853 7.063 6.578 7.828v-5.53h-1.978v-2.297h1.978v-1.74c0-1.958 1.192-3.036 2.96-3.036.844 0 1.566.063 1.777.09v2.063h-1.219c-.957 0-1.145.457-1.145 1.125v1.5h2.297l-.375 2.297h-1.922v5.531C13.148 15.063 16 11.87 16 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                      </svg>
+                                    </a>
+                                    <div class="tooltip">Facebook</div>
+                                  </li> 
+                                <li class="icon-content">
+                                  <a
+                                    href="https://www.instagram.com/eurocentromx/" aria-label="Instagram" data-social="instagram">
+                                    <div class="filled"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" xml:space="preserve">
+                                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" fill="currentColor">
+                                      </path>
+                                    </svg>
+                                  </a>
+                                  <div class="tooltip">Instagram</div>
+                                </li>
+                                <li class="icon-content">
+                                    <a href="https://www.tiktok.com/@eurocentromx" aria-label="Tiktok" data-social="tiktok">
+                                      <div class="filled"></div>
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                      </svg>
+                                    </a>
+                                    <div class="tooltip">Tiktok</div>
+                                  </li>
+                                  
+                              </ul> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <!-- Derechos © -->
+                    <hr>
+                    <div class="container-der">
+                        <div class="row">
+                            <h3 class="txt-dr">Euro Centro de Idiomas © todos los derechos reservados</h3>
+                        </div>
+                    </div> 
+                </div>
+        </section>   
+    </div>
+
+     <!-- Codigo de WhatsApp y Teléfono -->
+    <section>
+        <a href="https://api.whatsapp.com/send?phone=525535209725" class="float" target="_blank" title="Contacto Celular"> <img src="view/Images/whatsapp.png" width="60" height="60" alt="Contacto Celular"></a>
+        <a href="tel:+52-55-3520-9725" class="float2" target="_blank"><img src="view/Images/llamada.png" width="60" height="60" alt="Contacto Celular"></a>
+    </section>
+
+    <!-- Scripts -->
+     
+    <!-- Validaciones -->
+    <script src="View/App/validaciones.js"></script>
+
+    <!-- Script sidebar - ocultarse -->
+    <script src="View/App/index.js"></script>
+    
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Script de ladas de celular -->
+    <script src="View/App/intlTelInputWithUtils.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        const ladaInput = document.querySelector("#lada");
+
+        const iti = window.intlTelInput(input, {
+            initialCountry: "mx",
+            utilsScript: "js/utils.js"
+        });
+
+        function updatePhoneNumber() {
+            const dialCode = iti.getSelectedCountryData().dialCode;
+            const phoneNumber = input.value.replace(/^\+?\d+/, ''); // Remover cualquier LADA existente
+            input.value = `+${dialCode}${phoneNumber}`;
+        }
+
+        // Actualizar el valor del input cuando cambia el país
+        input.addEventListener('countrychange', updatePhoneNumber);
+
+        // Inicializar la LADA al cargar la página
+        updatePhoneNumber();
+
+        document.querySelector("#phone-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+        });
+
+        window.iti = iti;
+    </script>
+</body>
+</html>
